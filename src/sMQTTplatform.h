@@ -45,6 +45,8 @@ static const char *SMQTTTAG = "sMQTTBroker";
 #define TCPClient WiFiClient
 #define TCPServer WiFiServer
 #define SMQTT_LOGD(...)
+#elif defined(sMQTT_SOCKET)
+//Defined by users in .ino files
 #else
 #error "unknown platform"
 #endif
